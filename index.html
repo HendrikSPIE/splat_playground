@@ -36,7 +36,7 @@
             const posterUrl = url.searchParams.get('poster') ?? bootstrap.posterUrl ?? null;
             const skyboxUrl = url.searchParams.get('skybox') ?? bootstrap.skyboxUrl ?? null;
             const collisionUrl =
-                url.searchParams.get('collision') ?? url.searchParams.get('voxel') ?? bootstrap.collisionUrl ?? null;
+                url.searchParams.get('collision') ?? url.searchParams.get('voxel') ?? bootstrap.collisionUrl ?? './scene.voxel.json';
             const settingsUrl = url.searchParams.get('settings') ?? bootstrap.settingsUrl ?? './settings.json';
             const contentUrl = url.searchParams.get('content') ?? bootstrap.contentUrl ?? './scene.compressed.ply';
 
